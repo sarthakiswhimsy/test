@@ -1,0 +1,356 @@
+/* ===================== */
+/* BACKGROUND */
+/* ===================== */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  background: url("img5.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* ===================== */
+/* OVERLAY */
+/* ===================== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ===================== */
+/* CONTENT */
+/* ===================== */
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+
+/* ===================== */
+/* HEADINGS */
+/* ===================== */
+h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #ffe066;
+
+  text-shadow:
+    0 0 10px rgba(255,224,102,0.8),
+    0 0 20px rgba(255,224,102,0.6);
+}
+
+/* ===================== */
+/* COUNTDOWN */
+/* ===================== */
+#countdown {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #ffe066;
+
+  text-shadow:
+    0 0 15px rgba(255,224,102,0.8),
+    0 0 25px rgba(255,224,102,0.6);
+}
+
+/* ===================== */
+/* SUBTEXT */
+/* ===================== */
+.subtext {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* ===================== */
+/* GIFS */
+/* ===================== */
+.gif-row img {
+  width: 120px;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+/* ===================== */
+/* GAME */
+/* ===================== */
+#gameSection {
+  margin-top: 40px;
+}
+
+canvas {
+  background: rgba(255,255,255,0.95);
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* ===================== */
+/* BUTTON */
+/* ===================== */
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background: #ffe066;
+  color: black;
+  font-weight: bold;
+
+  box-shadow: 0 0 10px rgba(255,224,102,0.6);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #ffdd00;
+}
+
+/* ===================== */
+/* BIRTHDAY CARD */
+/* ===================== */
+#birthdayScene {
+  text-align: center;
+}
+
+.birthday-card {
+  display: inline-block;
+  padding: 30px;
+  margin-top: 80px;
+
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 0 20px rgba(0,0,0,0.8),
+    0 0 40px rgba(255,224,102,0.15);
+}
+
+/* ===================== */
+/* RACCOON IMAGE */
+/* ===================== */
+#raccoonWithGift {
+  width: 220px;
+  border-radius: 15px;
+
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+
+  animation: float 2s ease-in-out infinite;
+  transition: opacity 0.5s ease;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===================== */
+/* BIRTHDAY TEXT */
+/* ===================== */
+#birthdayText {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: white;
+
+  text-shadow:
+    0 0 10px rgba(0,0,0,0.8),
+    0 0 15px rgba(255,255,255,0.2);
+}
+
+/* ===================== */
+/* BALLOON CARD */
+/* ===================== */
+.card-box {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 0 20px rgba(255,255,255,0.1),
+    0 0 40px rgba(255,224,102,0.2);
+
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* ===================== */
+/* CARD SUBTEXT */
+/* ===================== */
+.card-subtext {
+  color: white;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* ===================== */
+/* BALLOONS */
+/* ===================== */
+#balloonContainer span {
+  font-size: 50px;
+  margin: 12px;
+  cursor: pointer;
+  display: inline-block;
+
+  animation: floatBalloon 2s ease-in-out infinite alternate;
+}
+
+@keyframes floatBalloon {
+  from { transform: translateY(0); }
+  to { transform: translateY(-12px); }
+}
+
+/* ===================== */
+/* MESSAGE */
+/* ===================== */
+#balloonMessage {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.6),
+    0 0 20px rgba(255,224,102,0.4);
+
+  transition: opacity 0.5s ease;
+}
+
+/* ===================== */
+/* FINAL CARD */
+/* ===================== */
+.final-card {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 35px;
+
+  background: rgba(0,0,0,0.65); /* slightly richer */
+  border-radius: 25px;
+
+  backdrop-filter: blur(15px);
+
+  text-align: center;
+
+  box-shadow:
+    0 0 30px rgba(255,224,102,0.25),
+    0 0 60px rgba(255,224,102,0.1);
+}
+
+/* BIG TITLE */
+.big-title {
+  font-size: 3rem;
+  color: #ffe066;
+
+  text-shadow:
+    0 0 20px rgba(255,224,102,0.9),
+    0 0 40px rgba(255,224,102,0.5);
+}
+
+/* ===================== */
+/* GALLERY (FIXED GRID) */
+/* ===================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+
+  border-radius: 15px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255,224,102,0.5);
+}
+
+/* ===================== */
+/* FINAL BUTTONS */
+/* ===================== */
+.final-buttons {
+  margin-top: 20px;
+}
+
+/* ===================== */
+/* FADE */
+/* ===================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===================== */
+/* FINAL BUTTONS LAYOUT */
+/* ===================== */
+.final-buttons {
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* BUTTON GROUP */
+.final-buttons button {
+  width: 220px;
+}
+
+/* ===================== */
+/* SIGNATURE */
+/* ===================== */
+.signature {
+  margin-top: 10px;
+
+  font-size: 15px;
+  font-style: italic;
+
+  color: #fff3b0;
+
+  opacity: 0.9;
+
+  text-align: center;
+
+  text-shadow:
+    0 0 8px rgba(255,224,102,0.6),
+    0 0 15px rgba(255,224,102,0.4);
+}
+
+/* OPTIONAL SOFT GLOW ANIMATION */
+.signature {
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    text-shadow: 0 0 8px rgba(255,224,102,0.5);
+  }
+  to {
+    text-shadow: 0 0 18px rgba(255,224,102,0.9);
+  }
+}

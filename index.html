@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 🎉</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- OVERLAY -->
+  <div class="overlay"></div>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+
+    <!-- COUNTDOWN -->
+    <div id="countdownSection">
+      <h1>🦝 Something magical is coming...</h1>
+
+      <div id="countdown">Loading...</div>
+
+      <p class="subtext">Let’s wait, it’s not the right time yet 🎁</p>
+
+      <div class="gif-row">
+        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
+        <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif">
+        <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif">
+      </div>
+    </div>
+
+    <!-- GAME -->
+    <div id="gameSection">
+      <h1>🦝 Raccoon Run</h1>
+
+      <button id="startBtn">▶ Start Game</button>
+
+      <div id="scoreboard">
+        Score: <span id="score">0</span> |
+        High Score: <span id="highScore">0</span>
+      </div>
+
+      <canvas id="gameCanvas" width="600" height="200"></canvas>
+
+      <p>Press SPACE or TAP to jump</p>
+    </div>
+
+  </div>
+
+  <!-- BIRTHDAY SCENE -->
+  <div id="birthdayScene" style="display:none;">
+    <div class="birthday-card">
+
+      <h1>🎉 Happy Birthday Tista 🎉</h1>
+
+      <img src="img1.jpg" id="raccoonWithGift">
+
+      <p id="birthdayText">Hey... I have something for you 🎁</p>
+
+      <button id="openGiftBtn">Open Gift 🎁</button>
+
+    </div>
+  </div>
+
+  <!-- BALLOON SECTION -->
+  <div id="balloonGameSection" style="display:none;">
+    <div class="card-box">
+
+      <h1>🎈The wishes I would wish for every time.🎈</h1>
+
+      <p class="card-subtext">Pop a balloon 💖</p>
+
+      <div id="balloonContainer"></div>
+
+      <p id="balloonMessage"></p>
+
+      <button id="continueBtn" style="display:none;">Continue 💖</button>
+
+    </div>
+  </div>
+
+  <!-- FINAL SECTION -->
+  <div id="finalSection" style="display:none;">
+    <div class="final-card">
+
+      <h1 class="big-title">🎉 HAPPY BIRTHDAY TISTA 🎉</h1>
+
+      <div class="gallery">
+        <img src="img1.jpg">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+        <img src="img4.jpg">
+
+        <img src="img6.jpg">
+        <img src="img7.jpg">
+        <img src="img8.jpg">
+        <img src="img9.jpg">
+        <img src="img10.jpg">
+        <img src="img11.jpg">
+        <img src="img12.jpg">
+        <img src="img13.jpg">
+        <img src="img14.jpg">
+        <img src="img15.jpg">
+        <img src="img16.jpg">
+      </div>
+
+      <div class="final-buttons">
+        <button onclick="viewAgain()">🔁 View Again</button>
+        <button onclick="playGameOnly()">🎮 Play Raccoon Run</button>
+
+        <p class="signature">Made with 💛 by Sarthak</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SCRIPT (keep at bottom) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
