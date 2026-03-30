@@ -273,15 +273,15 @@ startBtn.addEventListener("click", () => {
     let remaining = 8;
 
     const messages = [
-  "I wish that you always remember how special you truly are 💖",
-"I wish that you find success in everything you dream of ✨",
-"I wish that life treats you gently and you have fewer migraines 🌟",
-"I wish that you always stay exactly the way you are 🦝❤️",
-"I wish that every day feels like it’s a little bit about you 🎉",
-"I wish that you receive all the happiness you truly deserve 🌈",
-"I wish that we stay together through everything, till the very end, you and me 🤍",
-"I wish that you always remember we are exactly the same, and that’s what makes us so special 🫶"
-    ]
+"I hope you have the happiest birthday ever 😊",
+"I hope you achieve everything you dream of 🌟",
+"I hope life treats you gently and you have fewer migraines 🌼",
+"I hope you always stay exactly the way you are 💛",
+"I hope every day feels a little bit about you 🎈",
+"I hope you receive all the happiness you truly deserve 🌈",
+"I hope this year brings you new opportunities and beautiful memories 🎁",
+"I hope you are always surrounded by love, peace, and joy 🕊️"
+  ]
 
     for (let i = 0; i < 8; i++) {
 
