@@ -188,7 +188,7 @@ startBtn.addEventListener("click", () => {
     const btn = document.getElementById("openGiftBtn");
     const img = document.getElementById("raccoonWithGift");
 
-    const images = ["img5.jpg", "img2.jpg", "img3.jpg", "img4.jpg"];
+    const images = ["img5.jpeg", "img2.jpeg", "img3.jpeg", "img4.jpeg"];
     let index = 0;
 
     const slideshow = setInterval(() => {
